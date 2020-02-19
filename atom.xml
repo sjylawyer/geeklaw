@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.012368.xyz</id>
     <title>Gridea</title>
-    <updated>2020-02-19T02:59:26.936Z</updated>
+    <updated>2020-02-19T09:03:15.207Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.012368.xyz"/>
     <link rel="self" href="https://www.012368.xyz/atom.xml"/>
@@ -10,6 +10,48 @@
     <logo>https://www.012368.xyz/images/avatar.png</logo>
     <icon>https://www.012368.xyz/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[关于pt]]></title>
+        <id>https://www.012368.xyz/post/guan-yu-pt/</id>
+        <link href="https://www.012368.xyz/post/guan-yu-pt/">
+        </link>
+        <updated>2020-02-19T09:01:39.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="什么是pt">什么是Pt</h2>
+<p>pt是「Private Tracker」的简称，不同与Bt它可以记录下每一个用户的详细资料。个人认为能够有效的避免了像迅雷这种疯狂吸血的行为，而且pt本身比较隐蔽，在版权方面引起的纠纷也相对较少。</p>
+<p>正是因为pt的隐蔽性，大部分pt网站都采取了邀请的注册机制，对于一些大的网站需要老人的邀请才可以。像笔者这种新的用户，只能等待找一些网站使用，注册了一些网站暂时发现pt烧包稍微好些。</p>
+<p>本人主要写对入门pt的一些注意事项。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="什么是pt">什么是Pt</h2>
+<p>pt是「Private Tracker」的简称，不同与Bt它可以记录下每一个用户的详细资料。个人认为能够有效的避免了像迅雷这种疯狂吸血的行为，而且pt本身比较隐蔽，在版权方面引起的纠纷也相对较少。</p>
+<p>正是因为pt的隐蔽性，大部分pt网站都采取了邀请的注册机制，对于一些大的网站需要老人的邀请才可以。像笔者这种新的用户，只能等待找一些网站使用，注册了一些网站暂时发现pt烧包稍微好些。</p>
+<p>本人主要写对入门pt的一些注意事项。</p>
+<!-- more -->
+<h2 id="关于软件">关于软件</h2>
+<p>因为pt本身就是防止用户过分下载而拒接上传的自私行为，对于一些吸血的软件是命令禁止的，目前大部分pt网站建议使用的软件包括：</p>
+<ul>
+<li>qBittorrent</li>
+<li>uTorrent</li>
+<li>Transmission</li>
+<li>Deluge<br>
+当然家用nas可以通过docker安装其网页版进行下载。</li>
+</ul>
+<h2 id="关于下载">关于下载</h2>
+<p>先说下pt网站的常用术语（依据刚毛橐吾的<a href="https://zhidao.baidu.com/question/332161977.html">回答</a>）<br>
+*免费：不计下载流量，下载免费，上传100%，即用户下载不计算下载流量，上传计100%。：</p>
+<ul>
+<li>2x：上传流量算两倍，下载流量100%，例如用户上传1G算为2G，上传1G算为1G。</li>
+<li>2xfree：上传流量算两倍，下载免费，例如用户上传1G计算为2G，下载不算流量。</li>
+<li>2x50%：上传流量算两倍，下载算一半，例如用户上传1G计算为2G，下载1G计算为0.5G。</li>
+<li>50%：上传流量算100%，下载流量算50%，例如用户上传1G计算为1G，下载1G计算为0.5G。</li>
+</ul>
+<p>也是是说在下载的过程中2xfree对新用户是最为友好的，也是新人更应该争取的。<br>
+关于魔力值<br>
+<img src="https://i.loli.net/2020/02/19/pxvqPgUH9rjtNGk.png" alt="2020-02-19-16-48-37.png" loading="lazy"><br>
+<img src="./_image/2020-02-19-16-48-37.png" alt="" loading="lazy"></p>
+<p>而魔力值最大的好处是可以兑换上传量，以获得分享率的提升。</p>
+<!-- more -->
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[这是测试]]></title>
         <id>https://www.012368.xyz/post/zhe-shi-ce-shi/</id>
