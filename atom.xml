@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.012368.xyz</id>
     <title>废名</title>
-    <updated>2020-02-19T09:17:34.814Z</updated>
+    <updated>2020-02-19T09:45:48.041Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.012368.xyz"/>
     <link rel="self" href="https://www.012368.xyz/atom.xml"/>
@@ -10,6 +10,34 @@
     <logo>https://www.012368.xyz/images/avatar.png</logo>
     <icon>https://www.012368.xyz/favicon.ico</icon>
     <rights>All rights reserved 2020, 废名</rights>
+    <entry>
+        <title type="html"><![CDATA[用github搭建blog图床]]></title>
+        <id>https://www.012368.xyz/rsqdo8nAA/</id>
+        <link href="https://www.012368.xyz/rsqdo8nAA/">
+        </link>
+        <updated>2020-02-19T09:42:48.000Z</updated>
+        <content type="html"><![CDATA[<p>又决定重新开启bolg了，已经记不清是多少次下的决定了。这次打算使用的是<code>Gridea</code>。但是面临的问题是如何选择图床，<code>七牛云</code>、<code>sm</code>图床甚至阿里云存储都考虑的下，都觉的好麻烦。或许早就过了折腾的年纪了。最终选择了github+picogo的方案。<br>
+下载pico和安装并注册github就不介绍了。</p>
+<ul>
+<li>
+<p>在github上创立新的仓库。<br>
+<img src="https://raw.githubusercontent.com/sjylawyer/pic_backup/master/img/2020-02-19-17-27-04.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>依次进入<code>setting</code>→<code>Developer settings</code>→<code>Personal access tokens</code>创建一个token。</p>
+</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://raw.githubusercontent.com/sjylawyer/pic_backup/master/img/2020-02-19-17-28-53.png" alt="" loading="lazy"></figure>
+<ul>
+<li>在picogo上进行设置</li>
+</ul>
+<figure data-type="image" tabindex="2"><img src="https://raw.githubusercontent.com/sjylawyer/pic_backup/master/img/2020-02-19-17-33-44.png" alt="" loading="lazy"></figure>
+<ul>
+<li>设置上传快捷键</li>
+</ul>
+<figure data-type="image" tabindex="3"><img src="https://raw.githubusercontent.com/sjylawyer/pic_backup/master/img/20200219174221.png" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[关于pt]]></title>
         <id>https://www.012368.xyz/guan-yu-pt/</id>
