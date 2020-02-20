@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.012368.xyz</id>
     <title>废名</title>
-    <updated>2020-02-20T15:27:59.700Z</updated>
+    <updated>2020-02-20T15:29:44.104Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.012368.xyz"/>
     <link rel="self" href="https://www.012368.xyz/atom.xml"/>
@@ -78,25 +78,6 @@
 <img src="./_image/2020-02-19-16-48-37.png" alt="" loading="lazy"></p>
 <p>而魔力值最大的好处是可以兑换上传量，以获得分享率的提升。</p>
 <!-- more -->
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[关于]]></title>
-        <id>https://www.012368.xyz/about/</id>
-        <link href="https://www.012368.xyz/about/">
-        </link>
-        <updated>2019-01-25T11:09:48.000Z</updated>
-        <content type="html"><![CDATA[<p>一个宅男</p>
-<p>一个律师</p>
-<p>一个即使能穿越外面的围墙</p>
-<p>但内心深处的安全红线却越来越深的人。</p>
-<p>将原有的博客从ghost迁移至hexo，我已经一年多没有读书了，更可怕的事对我而言集中注意力都成为了一件很困难的事，我希望自己能够坚持的写一些东西，希望能够自救。</p>
-<h2 id="大事记">大事记</h2>
-<ul>
-<li>2020年2月20日，更换皮肤。</li>
-<li>2020年2月18日，博客搭建成功。</li>
-</ul>
-<figure data-type="image" tabindex="1"><img src="https://s2.ax1x.com/2019/06/29/ZQozse.png" alt="ZQozse.png" loading="lazy"></figure>
 ]]></content>
     </entry>
 </feed>
