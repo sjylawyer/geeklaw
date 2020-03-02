@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.012368.xyz</id>
     <title>废名</title>
-    <updated>2020-02-28T04:23:26.642Z</updated>
+    <updated>2020-03-02T02:30:12.462Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.012368.xyz"/>
     <link rel="self" href="https://www.012368.xyz/atom.xml"/>
@@ -10,6 +10,39 @@
     <logo>https://www.012368.xyz/images/avatar.png</logo>
     <icon>https://www.012368.xyz/favicon.ico</icon>
     <rights>All rights reserved 2020, 废名</rights>
+    <entry>
+        <title type="html"><![CDATA[尝试调整Notion的主页]]></title>
+        <id>https://www.012368.xyz/SuGPR-Wxg/</id>
+        <link href="https://www.012368.xyz/SuGPR-Wxg/">
+        </link>
+        <updated>2020-02-28T07:08:49.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="问题的提出">问题的提出</h2>
+<p>昨天观看了一场大佬下notion的主页分享，主要是以Maylie的notion主页为介绍。</p>
+<figure data-type="image" tabindex="1"><img src="https://raw.githubusercontent.com/sjylawyer/pic_backup/master/img/20200302101052.jpg" alt="" loading="lazy"></figure>
+<p>认真整理了下自己的笔记发现目前我的Notion笔记：</p>
+<p><img src="https://raw.githubusercontent.com/sjylawyer/pic_backup/master/img/20200302100758.png" alt="" loading="lazy"><br>
+我认为存在以下的问题：</p>
+<ul>
+<li>现在常用的一些目录隐藏在二级目录或更深层级的目录里面</li>
+<li>有些page例如锻炼记录和日历已经很久没有更新了。</li>
+<li>内容管理有些混乱，page与page之间的关联性比较差。</li>
+<li>对于一些难理解的话语无法进行着重的记忆。<br>
+整理了下自己的需求：</li>
+</ul>
+<ol>
+<li>周计划，来方便自己进行管理日常的生活，检查自己的任务完成程度</li>
+<li>WebClip，剪藏页面，重视page之间的关联。之前是徒有虚表，偶尔剪藏却基本不用。注意文档的查阅。</li>
+<li>阅读记录，坚持做好读书笔记。目前的暂时够用。</li>
+<li>法律的学习，将工作的学习以及生活进行分开，应该包括案例、法律以及庭审直播的学习。暂未确定好是否放在一个page里面。</li>
+<li>日常的学习，包括播课、ppt学习，还有一些词语的摘要和记录。</li>
+<li>软件文章的分类和整理，通过画廊的方式进行呈现，全平台的软件或一些优秀的软件如chrome或者alfred等软件可以 进行单独的分类呈现。主要包括：windows、mac、docker、Nas、vps等。</li>
+</ol>
+<p>于是将notion的新页面进行了一次调整。</p>
+<figure data-type="image" tabindex="2"><img src="https://raw.githubusercontent.com/sjylawyer/pic_backup/master/img/20200302100828.png" alt="" loading="lazy"></figure>
+<p>左侧添加了常用的一些界面，以方便在内部进行切换。右侧增加了周计划的示图，方便能够快速访问。<br>
+其余的内容也是以画廊的方式呈现，打算将关注的兴趣点，以问题的方式进行分类整理。而笔记之间的引用，可以用过链接的方式来呈现。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[用docker搭建nextcloud和aria2]]></title>
         <id>https://www.012368.xyz/qXk6tAlLG/</id>
