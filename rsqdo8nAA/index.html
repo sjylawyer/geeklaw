@@ -1,66 +1,244 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
+  <head lang="zh">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta name="renderer" content="webkit">
+<meta name="description" content="人们总说，万物皆有裂痕，太阳会照进来。然而，如果真的有一天能开放言说，这个期间我们所失去的又该拿什么来弥补？">
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
 
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>用github搭建blog图床 - 废名</title>
-<link rel="shortcut icon" href="https://www.012368.xyz/favicon.ico">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
-<link rel="stylesheet" href="https://www.012368.xyz/media/css/tailwind.css">
-<link rel="stylesheet" href="https://www.012368.xyz/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="用github搭建blog图床 - 废名 - Atom Feed" href="https://www.012368.xyz/atom.xml">
+<title>用github搭建blog图床 | 废名</title>
+<link href="https://www.012368.xyz/styles/main.css" type="text/css" rel="stylesheet"/>
+<link rel="stylesheet" href="//cdn.bootcss.com/KaTeX/0.10.2/katex.min.css"/>
+<script src="//cdn.bootcss.com/KaTeX/0.10.2/katex.min.js"></script>
+<script src="//cdn.bootcss.com/KaTeX/0.10.2/contrib/auto-render.min.js"></script>
+<script type="text/javascript" src="https://www.012368.xyz/media/scripts/jquery.js"></script>
+<script type="text/javascript" src="https://www.012368.xyz/media/scripts/jquery.pjax.min.js"></script>
+<script type="text/javascript" src="https://www.012368.xyz/media/scripts/basic.js"></script>
+<script type="text/javascript" src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+<script async type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/lightgallery/1.6.12/js/lightgallery.min.js"></script>
+<script src="https://cdn.bootcss.com/tocbot/4.8.1/tocbot.js"></script>
 
-    
+  </head>
+  <body>
+     <div class="header">
+      <div class="logo_title">
+		  
+        <div class="title animated fadeInDown"><img id="img1" alt="logo" style="display:inline-block;" src="https://www.012368.xyz/images/avatar.png"/>
+<script>
+var r = 0;
+    window.onload = function(){
+        var current = 0;
+        document.getElementById('img1').onclick = function(){
+            current = (current+90)%360;
+            this.style.transform = 'rotate('+current+'deg)';
+        }
+    };
+</script>
 
-  <meta name="description" content="又决定重新开启bolg了，已经记不清是多少次下的决定了。这次打算使用的是Gridea。但是面临的问题是如何选择图床，七牛云、sm图床甚至阿里云存储都考虑的下，都觉的好麻烦。或许早就过了折腾的年纪了。最终选择了github+picogo的方案..." />
-  <meta property="og:title" content="用github搭建blog图床 - 废名">
-  <meta property="og:description" content="又决定重新开启bolg了，已经记不清是多少次下的决定了。这次打算使用的是Gridea。但是面临的问题是如何选择图床，七牛云、sm图床甚至阿里云存储都考虑的下，都觉的好麻烦。或许早就过了折腾的年纪了。最终选择了github+picogo的方案..." />
-  <meta property="og:type" content="articles">
-  <meta property="og:url" content="https://www.012368.xyz/rsqdo8nAA/" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1582056615449-5dcb2332b3b2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:width" content="1200">
-  <meta name="twitter:title" content="用github搭建blog图床 - 废名">
-  <meta name="twitter:description" content="又决定重新开启bolg了，已经记不清是多少次下的决定了。这次打算使用的是Gridea。但是面临的问题是如何选择图床，七牛云、sm图床甚至阿里云存储都考虑的下，都觉的好麻烦。或许早就过了折腾的年纪了。最终选择了github+picogo的方案...">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://www.012368.xyz/rsqdo8nAA/">
+          <h1 title="废名" class="weaklink"><a  href="/">废名</a>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+          </h1>
+	  
+
+          <div class="navbar weaklink">
+            <div class="normal_nav">
+
+<div class="bitcron_nav_container">
+
+
+  <div class="bitcron_nav">
+    <div class="mixed_site_nav_wrap site_nav_wrap">
+		
+      <ul class="mixed_site_nav site_nav sm sm-base">
+	  
  
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a>
+  </li>
   
-    <link rel="stylesheet" href="https://www.012368.xyz/media/css/prism-vs-light.css">
+ 
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a>
+  </li>
   
+ 
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a>
+  </li>
+  
+ 
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/post/about" class="selected active current nav__item" >关于</a>
+  </li>
+  
+ 
+ <li>
 
-  
-</head>
+      </ul>
+	  
 
-<body>
-  <div class="antialiased flex flex-col min-h-screen" id="app">
-    <a href="https://www.012368.xyz" class="fixed top-0 left-0 mt-4 bg-black text-white dark:text-gray-700 dark:bg-yellow-50 dark:hover:bg-black dark:hover:text-white inline-flex p-2 pl-8 hover:text-gray-700 hover:bg-yellow-50 font-bold z-10 transition-fast animated fadeInLeft">
-      废名
-    </a>
-    <div class="max-w-4xl w-full mx-auto">
-      <div class="shadow-box bg-white dark:bg-gray-600 rounded-lg pt-32 md:pt-64 px-4 md:px-8 pb-8 animated fadeIn mb-8">
-        <h1 class="text-5xl font-semibold leading-normal pb-8 mb-8 border-b-8 border-gray-700">
-          用github搭建blog图床
-        </h1>
-        
-          <img src="https://images.unsplash.com/photo-1582056615449-5dcb2332b3b2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80" alt="用github搭建blog图床" class="block w-full mb-8">
-        
-        <div class="mb-8 flex flex-wrap">
-          <div class="text-gray-400 text-sm mr-4">2020-02-19 · 1 min read</div>
-          
-            <a href="https://www.012368.xyz/_juM8943q/" class="text-gray-700 text-sm border-b-2 border-dotted border-gray-200 hover:border-gray-600 transition-all duration-100 inline-flex mr-2">
-              <i class="ri-hashtag"></i>
-              blog
-            </a>
-          
+      <div class="clear clear_nav_inline_end"></div>
+    </div>
+
+  </div>
+
+
+
+  <div class="clear clear_nav_end"></div>
+
+</div>
+
+            </div>
+			
+			<div class="hamberger"><i class="fa fa-bars"></i>
+<i class="fa fa-times"></i>
+
+			</div>
+
+          </div>
+
         </div>
-        <div class="markdown mb-8" v-pre>
-          <p>又决定重新开启bolg了，已经记不清是多少次下的决定了。这次打算使用的是<code>Gridea</code>。但是面临的问题是如何选择图床，<code>七牛云</code>、<code>sm</code>图床甚至阿里云存储都考虑的下，都觉的好麻烦。或许早就过了折腾的年纪了。最终选择了github+picogo的方案。<br>
+
+      </div>
+
+      <div class="hidden_nav animated fadeInDown">
+
+<div class="bitcron_nav_container">
+
+
+  <div class="bitcron_nav">
+    <div class="mixed_site_nav_wrap site_nav_wrap">
+      <ul class="mixed_site_nav site_nav sm sm-base">
+	
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a>
+
+  </li>
+
+
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a>
+
+  </li>
+
+
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a>
+
+  </li>
+
+
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/post/about" class="selected active current nav__item" >关于</a>
+
+  </li>
+
+
+
+
+      </ul>
+
+      <div class="clear clear_nav_inline_end"></div>
+    </div>
+
+  </div>
+
+
+
+  <div class="clear clear_nav_end"></div>
+
+</div>
+
+      </div>
+
+    </div>
+
+
+
+
+    <div class="main" id="pjax-container">
+      <div class="main-inner">
+<div class="content">
+<div class="post_page" >
+<div class="post">
+  <div class="post_title sm_margin">
+    <h2><a>用github搭建blog图床</a>
+    </h2>
+  </div>
+<script>
+function lan(){
+	if (document.getElementById("lan").innerText == "繁"){
+		var s=document.getElementById("tongwenlet_cn");
+		if(s != null){
+		document.body.removeChild(s);
+		}
+		var s = document.createElement("script");
+		s.language = "javascript";
+		s.type = "text/javascript";
+		s.src = "https://git.oschina.net/runningcheese/JiathisQR.js/raw/master/bookmarklet_tw.js";
+		s.id = "tongwenlet_cn";
+		document.body.appendChild(s);
+		document.getElementById("lan").innerHTML = "简"
+	}
+	else if(document.getElementById("lan").innerText == "簡"){
+		var s=document.getElementById("tongwenlet_cn");
+		if(s != null){
+		document.body.removeChild(s);
+		}
+		var s = document.createElement("script");
+		s.language = "javascript";
+		s.type = "text/javascript";
+		s.src = "https://git.oschina.net/runningcheese/JiathisQR.js/raw/master/bookmarklet_cn.js";
+		s.id = "tongwenlet_cn";
+		document.body.appendChild(s);
+		document.getElementById("lan").innerHTML = "繁"
+		}
+}
+
+function change(){	
+    var rand = Math.random()*1+1;
+    var num = window.getComputedStyle(document.getElementsByName("show")[0],undefined).fontSize;
+	num = num.slice(0,-2); 
+    document.getElementById("show").style.fontSize = num - rand +'px';
+}
+</script>
+  <div class="post_details">
+    <div class="info"><i class="fa fa-calendar"></i>
+<span class="date_info">2020-02-19</span>
+<i class="fa fa-eye"></i>
+<span class="date_info"><span id="busuanzi_value_page_pv"></span> Views</span>
+<i class="fa fa-bookmark-o"></i>
+<span class="tags_info weaklink">
+	
+	<a href="https://www.012368.xyz/_juM8943q/" class="tag">blog</a>
+
+</span>
+<i class="fa fa-anchor"></i>
+<span style="margin-right:15px">
+143字
+</span>
+<i class="fa fa-clock-o"></i>
+<span style="margin-right:15px">
+1 min read
+</span>
+<span style="margin-right:15px">
+<i class="fa fa-share"></i>
+<a title="QR code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.012368.xyz/rsqdo8nAA/"><i class="fa fa-qrcode"></i></a>
+<a title="qq share" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://www.012368.xyz/rsqdo8nAA/&sharesource=qzone&title=用github搭建blog图床&pics=https://blog.blinkstar.cn/images/avatar.png&summary="><i class="fa fa-qq"></i></a>
+<a title="weibo share" target="_blank" href="https://service.weibo.com/share/share.php?url=https://www.012368.xyz/rsqdo8nAA/&sharesource=weibo&title=用github搭建blog图床 + " - " + &pic="https://blog.blinkstar.cn/images/avatar.png"><i class="fa fa-weibo"></i></a>
+</span>
+<span style="margin-right:15px">
+<a id="daxiao" href="javascript:void(0);" onclick="change();" title="调整字体大小"><i class="fa fa-font"></i></a>
+</span>
+<span style="margin-right:15px">
+<a id="lan" href="javascript:void(0);" onclick="lan();" title="调整简繁体">繁</a>
+</span>
+</div>
+  </div>
+
+    <div class="post_content markdown">
+	
+	<div style="background-image: url('https://images.unsplash.com/photo-1582056615449-5dcb2332b3b2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80');background-repeat: no-repeat;background-size:100% auto;margin-top:32px;padding-bottom: 50%;"></div>
+	
+    <div name="show" id="show">
+	<p class="md_block"><span class="md_line md_line_start md_line_end"><p>又决定重新开启bolg了，已经记不清是多少次下的决定了。这次打算使用的是<code>Gridea</code>。但是面临的问题是如何选择图床，<code>七牛云</code>、<code>sm</code>图床甚至阿里云存储都考虑的下，都觉的好麻烦。或许早就过了折腾的年纪了。最终选择了github+picogo的方案。<br>
 下载pico和安装并注册github就不介绍了。</p>
 <ul>
 <li>
@@ -80,224 +258,145 @@
 <li>设置上传快捷键</li>
 </ul>
 <figure data-type="image" tabindex="3"><img src="https://raw.githubusercontent.com/sjylawyer/pic_backup/master/img/20200219174221.png" alt="" loading="lazy"></figure>
+</span></p></div><div id = "warn"></div>
+	<br>
+	<hr>
+<div style="color: #ccc;font-size:14px;"><i class="fa fa-user"></i>本文由<a rel="license" href="/">废名</a>创作</div>	
+<div style="color: #ccc;font-size:14px;"><i class="fa fa-cc"></i>该文章采用<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可。转载请注明出处！</div>
+<div style="color: #ccc;font-size:14px;"><i class="fa fa-clock-o"></i>发布时间为：2020-02-19</div>    
+<div class="reward"><div class="reward-button">赏 <span class="reward-code"> <span class="alipay-code"> <img class="alipay-img" alt = "support" src="https://www.012368.xyz/media/images/alipay.png"><b>支付宝扫码打赏</b> </span> <span class="wechat-code"> <img alt ="support" class="wechat-img" src="https://www.012368.xyz/media/images/wechat.png"><b>微信打赏</b> </span> </span></div></div>
+<div style="text-align:center;color: #ccc;font-size:14px;">如果觉得这篇文章对您有帮助，可以请作者喝一杯饮料哦🥤</div>    
+</div>
+</div>
 
-        </div>
-        <!-- Share to Twitter, Weibo, Telegram -->
-        <div class="flex items-center">
-          <div class="mr-4 flex items-center">
-            <i class="ri-share-forward-line text-gray-500"></i>
-          </div>
-          <div class="px-4 cursor-pointer text-blue-500 hover:bg-blue-100 dark:hover:bg-gray-600 inline-flex" @click="shareToTwitter">
-            <i class="ri-twitter-line"></i>
-          </div>
-          <div class="px-4 cursor-pointer text-red-500 hover:bg-red-100 dark:hover:bg-gray-600 inline-flex" @click="shareToWeibo">
-            <i class="ri-weibo-line"></i>
-          </div>
-          <div class="px-4 cursor-pointer text-indigo-500 hover:bg-indigo-100 dark:hover:bg-gray-600 inline-flex" @click="shareToTelegram">
-            <i class="ri-telegram-line"></i>
-          </div>
-        </div>
-      </div>
+<style type="text/css">
+#mememe {
+	border:3px;
+	border-radius:5px;
+    background-repeat: no-repeat;
+    height: 100%;
+	width: 100%;
+	display: inline-block;
+	border-radius:5px; 
+}
+</style>
 
-      
+<div style="width:100%;overflow:hidden">
 
-      
-        <div id="vlaine-comment"></div>
-<script type="application/javascript" src="https://unpkg.com/valine"></script>
-<script type="application/javascript">
-  new Valine({
-    el: '#vlaine-comment',
-    appId: 'iaK44jqpXhrjbEnK0WY35SPw-MdYXbMMI',
-    appKey: 'rCMu6CEXkoG5nisdsfqbwCwe',
-    pageSize: 10,
-    notify: true,
-    avatar: 'mp',
-    verify: true,
-    placeholder: '来都来了，不妨评论一下',
-    visitor: true,
-    highlight: true,
-    recordIP: false,
-  })
+          <div style="float:right;text-align:right;color:#ccc;font-size:18px;width:50%;">
+            下一篇
+            <a href="https://www.012368.xyz/guan-yu-pt/">
+              <p class="post-title">
+                <b>关于pt</b>
+              </p>
+            </a>
+          </div>
+
+
+
+          <div style="float:left;text-align:left;color:#ccc;font-size:18px;width:50%;">
+            上一篇
+            <a href="https://www.012368.xyz/cvQNPgRun/">
+              <p class="post-title">
+                <b>使用valine+leancloud评论系统</b>
+              </p>
+            </a>
+          </div>
+
+</div>
+
+<div class="doc_comments">
+
+</div>
+<script>
+var link="";$("img").each((i,o)=>{var o=$(o);if(o.attr("src").indexOf("sinaimg")>0||o.attr("src").indexOf("qpic")>0||o.attr("src").indexOf("baidu")>0||o.attr("src").indexOf("sinaimg")>0){o.attr("referrerpolicy","no-referrer");link=o.attr("src");o.attr("src",link);}});
+imgList = document.querySelectorAll('.md_block img')
+imgList.forEach(img => {
+  if (img.alt !== "logo" && img.alt !== "featureimg"){
+  let div1 = document.createElement('div')
+  let div = document.createElement('div')
+  div.className='back';
+  div.setAttribute("data-src",img.src)
+  var figuration = document.createElement("figcaption")
+  figuration.innerHTML = '<a href="' + img.src + '">' + img.alt + '</a>'
+  img.replaceWith(div1)
+  div1.appendChild(div)
+  div.appendChild(img)
+  div1.appendChild(figuration)}
+})
+$('img').on('error',function(){$(this).prop('src','https://www.012368.xyz/media/images/broken.jpg')});$(".md_block a").attr("rel","external nofollow");$("a[rel='external nofollow']").attr("target","_blank");$("a[href^='#']").removeAttr("target");$("a.ex").removeAttr("rel");$("a.ex").removeAttr("target");
+content="<div class='warn'>本文最后更新于2020-02-19，已超过 1 年没有更新，涉及的内容可能已经失效！</div>";var date1="2020-02-19 17:42:48";date1=date1.replace("-","/");var date2=new Date();var date3=date2.getTime()-new Date(date1).getTime();var days=Math.floor(date3/(24*3600*1000));if(days>=365){document.getElementById("warn").innerHTML=content};
+$('#pjax-container').lightGallery({
+    selector: '.back'
+});
 </script>
-      
-
-      <footer class="py-12 text-center px-4 md:px-0" v-pre>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-</footer>
-    </div>
-
-    <!-- TOC Container -->
-    <div class="fixed right-0 bottom-0 mb-16 mr-4 shadow w-8 h-8 rounded-full flex justify-center items-center z-10 cursor-pointer bg-white dark:bg-gray-500 dark:text-gray-200 hover:shadow-lg transition-all animated fadeInRight" @click="showToc = true">
-      <i class="ri-file-list-line"></i>
-    </div>
-
-    <div class="fixed right-0 top-0 bottom-0 overflow-y-auto w-64 bg-white dark:bg-gray-800 p-4 border-l border-gray-100 dark:border-gray-600 z-10 transition-fast" :class="{ '-mr-64': !showToc }">
-      <div class="flex mb-4 justify-end">
-        <div class="w-8 h-8 inline-flex justify-center items-center rounded-full cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast" @click="showToc = false">
-          <i class="ri-close-line text-lg"></i>
-        </div>
-      </div>
-      <div class="post-toc-container">
-        
-      </div>
-    </div>
-
-    <!-- Back to top -->
-    <div class="fixed right-0 bottom-0 mb-4 mr-4 shadow w-8 h-8 rounded-full flex justify-center items-center z-10 cursor-pointer bg-white hover:shadow-lg transition-all dark:bg-gray-500 dark:text-gray-200" @click="backToUp" v-show="scrolled">
-      <i class="ri-arrow-up-line"></i>
-    </div>
-  </div>
-
-  <!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-  <!-- Background of PhotoSwipe. 
-        It's a separate element as animating opacity is faster than rgba(). -->
-  <div class="pswp__bg">
-  </div>
-  <!-- Slides wrapper with overflow:hidden. -->
-  <div class="pswp__scroll-wrap">
-    <!-- Container that holds slides. 
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-    <div class="pswp__container">
-      <div class="pswp__item">
-      </div>
-      <div class="pswp__item">
-      </div>
-      <div class="pswp__item">
-      </div>
-    </div>
-    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-    <div class="pswp__ui pswp__ui--hidden">
-      <div class="pswp__top-bar">
-        <!--  Controls are self-explanatory. Order can be changed. -->
-        <div class="pswp__counter">
-        </div>
-        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-        <!-- element will get class pswp__preloader--active when preloader is running -->
-        <div class="pswp__preloader">
-          <div class="pswp__preloader__icn">
-            <div class="pswp__preloader__cut">
-              <div class="pswp__preloader__donut">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-        <div class="pswp__share-tooltip">
-        </div>
-      </div>
-      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-      </button>
-      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-      </button>
-      <div class="pswp__caption">
-        <div class="pswp__caption__center">
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="https://www.012368.xyz/media/scripts/main.js"></script>
-  
-  <!-- Code Highlight -->
-  
-    <script src="https://www.012368.xyz/media/prism.js"></script>
-    <script>
-      Prism.highlightAll()
-    </script>
-  
 
-  <script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
-  <script>
-    //拿到预览框架，也就是上面的html代码
-    var pswpElement = document.querySelectorAll('.pswp')[0];
-    //定义图片数组变量
-    var imgitems;
-    /**
-    * 用于显示预览界面
-    * @param index 图片数组下标
-    */
-    function viewImg(index) {
-      //其它选项这里不做过多阐述，详情见官网
-      var pswpoptions = {
-        index: parseInt(index, 10), // 开始幻灯片索引。0是第一张幻灯片。必须是整数，而不是字符串。
-        bgOpacity: 0.7, // 背景透明度，0-1
-        maxSpreadZoom: 3, // 缩放级别，不要太大
-      };
-      //初始化并打开PhotoSwipe，pswpElement对应上面预览框架，PhotoSwipeUI_Default为皮肤，imgitems为图片数组，pswpoptions为选项
-      var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, imgitems, pswpoptions);
-      gallery.init()
-    }
-    /**
-    * 用于添加图片点击事件
-    * @param img 图片元素
-    * @param index 所属下标（在imgitems中的位置）
-    */
-    function addImgClick(img, index) {
-      img.onclick = function() {
-        viewImg(index)
-      }
-    }
-    /**
-    * 轮询所有图片，获取src、width、height等数据，加入imgitems，并给图片元素添加事件
-    * 最好在onload中执行该方法，本站因放在最底部，所以直接初始化
-    * 异步加载图片可在图片元素创建完成后调用此方法
-    */
-    function initImg() {
-      //重置图片数组
-      imgitems = [];
-      //查找class:markdown 下的所有img元素并遍历
-      var imgs = document.querySelectorAll('.markdown img');
-      for (var i = 0; i < imgs.length; i++) {
-        var img = imgs[i];
-        //本站相册初始为loading图片，真实图片放在data-src
-        var ds = img.getAttribute("data-src");
-        //创建image对象，用于获取图片宽高
-        var imgtemp = new Image();
-        //判断是否存在data-src
-        if (ds != null && ds.length > 0) {
-          imgtemp.src = ds
-        } else {
-          imgtemp.src = img.src
-        }
-        //判断是否存在缓存
-        if (imgtemp.complete) {
-          var imgobj = {
-            "src": imgtemp.src,
-            "w": imgtemp.width,
-            "h": imgtemp.height,
-          };
-          imgitems[i] = imgobj;
-          addImgClick(img, i);
-        } else {
-          console.log('进来了2')
-          imgtemp.index = i;
-          imgtemp.img = img;
-          imgtemp.onload = function() {
-            var imgobj = {
-              "src": this.src,
-              "w": this.width,
-              "h": this.height,
-            };
-            //不要使用push，因为onload前后顺序会不同
-            imgitems[this.index] = imgobj
-            //添加点击事件
-            addImgClick(this.img, this.index);
-          }
-        }
-      }
-    }
-    //初始化
-    initImg();
-  </script>
+      </div>
+<div class="toc">
+
+</div>
+    </div>
+	
+   <div class="footer">
+<div class="site_footer_wrap"><div class="site_footer">
+
+      <div class="mysocials"><div class="my_socials">
+		   
+			   
+    
+			   
+    
+			   
+    
+			   
+    
+			   
+    
+			   
+    
+</div>
+      </div>
+
+      <div class="copyright" id="copyright">
+	  <script>
+		var date=new Date;
+		var year=date.getFullYear(); 
+		document.write("Copyright © "+year+" " + "废名. ");
+		</script>
+		Powered by Gridea.
+		<br>
+		本站已稳定运行了
+		<strong><script type="text/javascript">
+		var urodz= new Date("10/28/2018");
+		var now = new Date();
+		var ile = now.getTime() - urodz.getTime();
+		var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
+		document.write(+dni)
+		</script>
+		</strong>天
+		<br>
+		本站总访问量为 <strong><span id="busuanzi_value_site_uv"></span></strong> 次
+	  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+      </div>
+	  <img src="https://www.012368.xyz/media/images/font.svg">
+
+    </div>
+
+<script type="text/javascript" src="https://www.012368.xyz/media/scripts/love.js"></script>
+<script type="text/javascript" src="https://www.012368.xyz/media/scripts/darkmode.js"></script>
+<script>
+new Darkmode({label: '🌓',backgroundColor: '#f7f7f7',time: '0.5s'}).showWidget();
+console.clear();
+console.log("\n %c \u26a1Theme: Bitcron-pro Author's Blog:https://blog.blinkstar.cn  Writen By Serence  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;", );
+</script>
+<script>
+hljs.initHighlightingOnLoad();
+</script>
+
+
 </body>
 
 </html>
