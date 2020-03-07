@@ -1,60 +1,110 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-	<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,minimal-ui" />
-    <title>用docker搭建nextcloud和aria2 | 废名</title>
-<link rel='stylesheet' id='puma-css'  href='https://www.012368.xyz/styles/main.css' type='text/css' media='screen' />
-<link rel='stylesheet' id='puma-css'  href='https://at.alicdn.com/t/font_1306644_jwtuc2zzbrd.css' media='screen' />
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<script type='text/javascript' src='https://www.012368.xyz/media/scripts/jquery.js'></script>
-<script type='text/javascript' src='https://www.012368.xyz/media/scripts/jquery-migrate.min.js'></script>
-        <script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
-         <script >hljs.initHighlightingOnLoad();</script>
-         
-</head>
-<body class="single single-post postid-3788 single-format-standard">
-	<!--加入跟随滑动的顶部-->
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<h1 class="site-title">
-				<a href="https://www.012368.xyz" title="废名">废名</a>
-			</h1>
-		</div>
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>用docker搭建nextcloud和aria2 | 废名</title>
+<link rel="shortcut icon" href="https://www.012368.xyz/favicon.ico?v=1583547240000">
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.012368.xyz/styles/main.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-		<a class="primary-nav-trigger" href="javascript:void(0)">
-			<span class="menu-icon"></span>
-		</a>
-		
-	</header>
-		<div class="site-navigation-wrapper">
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<ul class="primary-nav">
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/go.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+<!-- DEMO JS -->
+<script src="media/scripts/index.js"></script>
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            废名
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
                     
-				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="首页" href="/">首页</a></li>
-                
-				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="归档" href="/archives">归档</a></li>
-                
-				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="标签" href="/tags">标签</a></li>
-                
-				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="关于" href="/post/about">关于</a></li>
-                
-	
-			</ul>
-		</nav>			
-	</div>
-	<!--跟随滑动的顶部结束-->
-	<div class="surface-content">    <main class="main-content">
-        <section class="section-body">
-                            <header class="section-header u-textAlignCenter">
-                    <h2 class="grap--h2">用docker搭建nextcloud和aria2</h2>
-                    <div class="block-postMetaWrap">
-                        <time>2020-02-23</time>
-                    </div>
-                </header>
-                <div class="grap">
-					
-					<pre><code>git clone https://github.com/wahyd4/aria2-ariang-x-docker-compose.git
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/archives" class="menu gt-a-link">
+                            归档
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/post/about" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+        </div>
+    </div>
+</nav>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    用docker搭建nextcloud和aria2
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2020-02-23 ·
+                    </time>
+                    
+                        <a href="https://www.012368.xyz/t2HjJS9LE/" class="post-tags">
+                            # docker
+                        </a>
+                    
+                        <a href="https://www.012368.xyz/OxWThhDmW/" class="post-tags">
+                            # Nas
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <pre><code>git clone https://github.com/wahyd4/aria2-ariang-x-docker-compose.git
 cd aria2-ariang-x-docker-compose/nextcloud
 </code></pre>
 <p>注：因此此次是为了安装nextcloud和aria2 因此进入nextcloud目录[^docker-compose]</p>
@@ -118,55 +168,46 @@ apt-get install vim</p>
 <hr>
 
                 </div>
-
-                <div class="post--keywords" itemprop="keywords">
-					 <a href="https://www.012368.xyz/t2HjJS9LE/" class="post--keyword" data-title="docker" data-type="post_tag" data-term-id="39">docker</a>  <a href="https://www.012368.xyz/OxWThhDmW/" class="post--keyword" data-title="Nas" data-type="post_tag" data-term-id="39">Nas</a>           </div>
-
-
-
-                      </section>
-    </main>
-</div>
-	<footer class="site-footer u-textAlignCenter">
-    	<div class="footer-branding">
-            <a href="https://www.012368.xyz" title="废名">废名</a>
-									<p class="site-description">為眾人抱薪者 不可使其凍斃於風雪</p>
-			         </div>
-		 <hr />
-		 <div class="social-links">
-		                       
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-				</div>
-        <div class="footer-copy">
-                Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+            </article>
         </div>
 
-    </footer>
-	<div class="back-to-top u-hide" onclick="backToTop();"><i class="iconfont icon-xiangshang"></i></div>
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://www.012368.xyz/cvQNPgRun/" class="post-title gt-a-link">
+                    使用valine+leancloud评论系统
+                </a>
+            </div>
+        
 
-<script type='text/javascript' src='https://www.012368.xyz/media/scripts/main.js'></script>
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">人们总说，万物皆有裂痕，太阳会照进来。然而，如果真的有一天能开放言说，这个期间我们所失去的又该拿什么来弥补？</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a href="https://www.012368.xyz/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+    hljs.initHighlightingOnLoad()
+</script>
+
+
+    </div>
+</div>
 </body>
 </html>
