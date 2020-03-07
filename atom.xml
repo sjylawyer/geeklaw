@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.012368.xyz</id>
     <title>废名</title>
-    <updated>2020-03-07T01:47:31.766Z</updated>
+    <updated>2020-03-07T01:55:28.015Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.012368.xyz"/>
     <link rel="self" href="https://www.012368.xyz/atom.xml"/>
@@ -22,11 +22,17 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/_SsccRkLLzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 <p>当我们看到第一个镜头时，我们看到一个年轻人在奔跑。</p>
-<img src="https://cdn.jsdelivr.net/gh/sjylawyer/pic_backup/img/20200305155806.png"  width="560" /> 
-<p>之后画面切换过来，出现了一个商人，而年轻人似乎要过去抢夺他的手提包。</p>
-<img src="https://cdn.jsdelivr.net/gh/sjylawyer/pic_backup/img/20200305155931.png"  width="560" /> 
+<center>
+      <img src="https://cdn.jsdelivr.net/gh/sjylawyer/pic_backup/img/20200305155806.png"  width="560" /> 
+</center>
+之后画面切换过来，出现了一个商人，而年轻人似乎要过去抢夺他的手提包。
+<center>
+        <img src="https://cdn.jsdelivr.net/gh/sjylawyer/pic_backup/img/20200305155931.png"  width="560" /> 
+</center>
 <p>但是到了第三个镜头的时候我看到，其实年轻人只是为了避免商人受到高空货物的砸伤。</p>
-<img src="https://cdn.jsdelivr.net/gh/sjylawyer/pic_backup/img/20200305160034.png"  width="560" /> 
+<center>
+     <img src="https://cdn.jsdelivr.net/gh/sjylawyer/pic_backup/img/20200305160034.png"  width="560" /> 
+</center>
 <p>从始至终我们都会看到年轻人奔跑的这个发生的事实，会产生错觉的原因在于我们会将我们看到的事实和我们的经验进行加工，产生我们想象的事实。可能在这里有的人会说，这种事实是错误的，通过第三个视角，年轻人本身是在救人，如果在下一个镜头我们看到的是绳子是年轻人割断的呢？<br>
 我们通过自己所见的材料不断加工进而形成了我们看到的事实，可有的时候我们的信息本身就是错误的，或者信息被进行了截取，或者像作者所述真相本身是复杂的，亦或是为了师生、亲戚等有共同利益体的关系提供伪造的事实。更主要的是个体的不同，即使对同一件事情，我们产生的感想也会有不同，我们会不自觉地陷入一种认知偏差，更倾向地接受符合我们既有的心态；对于已经根深蒂固的观念我们却更容易去排斥。</p>
 <blockquote>
@@ -52,27 +58,30 @@
         <updated>2020-02-28T07:08:49.000Z</updated>
         <content type="html"><![CDATA[<h2 id="问题的提出">问题的提出</h2>
 <p>昨天观看了一场大佬下notion的主页分享，主要是以Maylie的notion主页为介绍。</p>
-<figure data-type="image" tabindex="1"><img src="https://raw.githubusercontent.com/sjylawyer/pic_backup/master/img/20200302101052.jpg" alt="" loading="lazy"></figure>
+<center>
+        <img src="https://raw.githubusercontent.com/sjylawyer/pic_backup/master/img/20200302101052.jpg"  title="Maylie的notion笔记" width="560" /> 
+</center>
 <p>认真整理了下自己的笔记发现目前我的Notion笔记：</p>
-<p><img src="https://raw.githubusercontent.com/sjylawyer/pic_backup/master/img/20200302100758.png" alt="" loading="lazy"><br>
-我认为存在以下的问题：</p>
-<ul>
-<li>现在常用的一些目录隐藏在二级目录或更深层级的目录里面</li>
-<li>有些page例如锻炼记录和日历已经很久没有更新了。</li>
-<li>内容管理有些混乱，page与page之间的关联性比较差。</li>
-<li>对于一些难理解的话语无法进行着重的记忆。<br>
-整理了下自己的需求：</li>
-</ul>
-<ol>
-<li>周计划，来方便自己进行管理日常的生活，检查自己的任务完成程度</li>
-<li>WebClip，剪藏页面，重视page之间的关联。之前是徒有虚表，偶尔剪藏却基本不用。注意文档的查阅。</li>
-<li>阅读记录，坚持做好读书笔记。目前的暂时够用。</li>
-<li>法律的学习，将工作的学习以及生活进行分开，应该包括案例、法律以及庭审直播的学习。暂未确定好是否放在一个page里面。</li>
-<li>日常的学习，包括播课、ppt学习，还有一些词语的摘要和记录。</li>
-<li>软件文章的分类和整理，通过画廊的方式进行呈现，全平台的软件或一些优秀的软件如chrome或者alfred等软件可以 进行单独的分类呈现。主要包括：windows、mac、docker、Nas、vps等。</li>
-</ol>
+<center>
+        <img src="https://raw.githubusercontent.com/sjylawyer/pic_backup/master/img/20200302100758.png"  title="我的notion笔记" width="560" /> 
+</center>
+我认为存在以下的问题：
+* 现在常用的一些目录隐藏在二级目录或更深层级的目录里面
+* 有些page例如锻炼记录和日历已经很久没有更新了。
+* 内容管理有些混乱，page与page之间的关联性比较差。
+* 对于一些难理解的话语无法进行着重的记忆。
+整理了下自己的需求：
+1. 周计划，来方便自己进行管理日常的生活，检查自己的任务完成程度
+2. WebClip，剪藏页面，重视page之间的关联。之前是徒有虚表，偶尔剪藏却基本不用。注意文档的查阅。
+3. 阅读记录，坚持做好读书笔记。目前的暂时够用。
+4. 法律的学习，将工作的学习以及生活进行分开，应该包括案例、法律以及庭审直播的学习。暂未确定好是否放在一个page里面。
+5. 日常的学习，包括播课、ppt学习，还有一些词语的摘要和记录。
+6. 软件文章的分类和整理，通过画廊的方式进行呈现，全平台的软件或一些优秀的软件如chrome或者alfred等软件可以 进行单独的分类呈现。主要包括：windows、mac、docker、Nas、vps等。
 <p>于是将notion的新页面进行了一次调整。</p>
-<figure data-type="image" tabindex="2"><img src="https://raw.githubusercontent.com/sjylawyer/pic_backup/master/img/20200302100828.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://raw.githubusercontent.com/sjylawyer/pic_backup/master/img/20200302100828.png" alt="" loading="lazy"></figure>
+<center>
+        <img src="https://raw.githubusercontent.com/sjylawyer/pic_backup/master/img/20200302100828.png"  title="修改后的notion笔记" width="560" /> 
+</center>
 <p>左侧添加了常用的一些界面，以方便在内部进行切换。右侧增加了周计划的示图，方便能够快速访问。<br>
 其余的内容也是以画廊的方式呈现，打算将关注的兴趣点，以问题的方式进行分类整理。而笔记之间的引用，可以用过链接的方式来呈现。</p>
 ]]></content>
