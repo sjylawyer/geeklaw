@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.012368.xyz</id>
     <title>废名</title>
-    <updated>2020-03-07T02:16:04.785Z</updated>
+    <updated>2020-03-31T13:59:39.931Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.012368.xyz"/>
     <link rel="self" href="https://www.012368.xyz/atom.xml"/>
@@ -10,6 +10,27 @@
     <logo>https://www.012368.xyz/images/avatar.png</logo>
     <icon>https://www.012368.xyz/favicon.ico</icon>
     <rights>All rights reserved 2020, 废名</rights>
+    <entry>
+        <title type="html"><![CDATA[检验自己01]]></title>
+        <id>https://www.012368.xyz/-pPIERuX6/</id>
+        <link href="https://www.012368.xyz/-pPIERuX6/">
+        </link>
+        <updated>2020-03-31T13:56:35.000Z</updated>
+        <content type="html"><![CDATA[<p>今天在微信的群里，有人谈及了民法总则颁布后，民法通则中短期的诉讼时效是否经过的问题？<br>
+我印象中对于这个问题我是仔细研究过的并查阅了些资料，最终在李宇的《民法总则》中找到了恰当的档案。<br>
+因此我针对别人提出的最高法已经发布了专门的司法解释视而不见。但我还嘴硬，结果被啪啪打脸。</p>
+<ol>
+<li>对于该司法解释我知道，但是对于内容我是记错了，我印象中是民法总则颁布后诉讼时效规定的问题。</li>
+<li>别人提出该司法解释的时候，我看了，但只看了第一条没往下看。<br>
+其实以上都是借口，最根本的原因在于我是以一个好胜的心态来看待这个问题的，我没有耐心的关注于问题本身。同时，自己的知识记忆层面有一个错误，就是过多的去记住一个答案，有可能我错了而浑然不知。</li>
+</ol>
+<p>最近在拼命的完善自己的技巧和方法，总是觉得自己很无知。却总是自以为有知识，也是够讽刺的🤡。</p>
+<p>附最高人民法院关于适用《中华人民共和国民法总则》诉讼时效制度若干问题的解释：</p>
+<blockquote>
+<p>第二条 民法总则施行之日，诉讼时效期间尚未满民法通则规定的二年或者一年，当事人主张适用民法总则关于三年诉讼时效期间规定的，人民法院应予支持。</p>
+</blockquote>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[后真相时代丨读后感]]></title>
         <id>https://www.012368.xyz/cr5egXWv1/</id>
